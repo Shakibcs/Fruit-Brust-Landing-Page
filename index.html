@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Bursht Landing Page</title>
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!--Daisy and Tailwindcss-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/4c895bb38c.js" crossorigin="anonymous"></script>
+
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+    <!--TailwindCSS customized color-->
+    <script>
+  tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color': "#F85559"
+              }
+             
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-lato">
+    <!-- Header -->
+    <header class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-5">            
+      
+      <div class="navbar bg-base-100 bg-primary-color md:rounded-full lg:px-10 mb-14">       <!--nav-section start-->
+
+        <div class="navbar-start">           <!--for mobile nav-list-->
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>                            <!--Mobile nav-list ends-->
+          
+          <div class="navbar-center hidden lg:flex lg:text-lg font-medium text-white"> <!--desktop nave-list starts-->
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>                                    <!--desktop nave-list ends-->
+        </div>   
+        
+         <!--Fruit logo with txt-->
+          
+            <div class="flex lg:gap-3 lg:w-10 rounded-full text-white">
+              <img src="./images/logo.png" />
+              <h3 class="lg:text-4xl	font-bold">Fruit Burst</h3>
+            </div>
+
+        <div class="navbar-end lg:flex hidden sm:block">                  
+          <!--search bar-->
+            <div class="form-control flex-end">
+              <i class="fa-solid absolute fa-magnifying-glass mt-5 ml-40"></i>
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+             
+            </div>
+        </div>
+
+      </div>               <!--nav-section-end-->
+
+<!-- Banner-section -->
+    <section class="banner"> <!--min-h-[calc(100vh - 96px)]-->
+        <!-- Carousel -->
+        <div style="border-radius: 8px;" class="carousel w-full min-h-[calc(100vh - 5vh)]">
+          <div id="slide1" class="carousel-item relative w-full rounded-8px">    <!--item-1-->
+            <!--hero-section-1-->
+            <div class="hero" style="background-image: url('./images/banner1.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn bg-primary-color border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>  <!--hero-section-1 ends-->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+
+          <div id="slide2" class="carousel-item relative w-full">   <!--item-2-->
+            <!--hero-2-->
+            <div class="hero" style="background-image: url('./images/banner2.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">We supply highly quality organic products.</p>
+                  <button class="btn bg-primary-color border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>  <!--hero-2 ends-->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+
+        
+          <div id="slide3" class="carousel-item relative w-full">   <!--item-3-->
+            <!--hero-3-->
+            <div class="hero" style="background-image: url('./images/banner3.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn bg-primary-color border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>  <!--hero-3 ends-->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+
+          
+          <div id="slide4" class="carousel-item relative w-full">   <!--item-4-->
+            <!--hero-4-->
+            <div class="hero" style="background-image: url('./images/banner4.png');">
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn bg-primary-color border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>  <!--hero-4 ends-->
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+                  
+        </div>       <!--Carosel ends-->
+
+    </section>      <!--slider-section ends-->
+
+    </header>       <!--header ends-->
+
+    
+
+    <!-- Main -->
+    <main class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-5">  
+      <section class="deals">     <!--Deals section-->
+        <div class="deals-top flex flex-col  lg:flex-row justify-between items-center content-center">   <!--deals top-->
+          <div class="deals-text">     <!--deals-text-->
+            <h2 class="text-xl lg:text-5xl font-bold text-black mb-4">Deal of the day</h2>
+            <p class="font-medium lg:text-[16px] text-[#4f4e4e] lg:max-w-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years.</p>
+          </div>
+          <div class="day-count lg:gap-3">
+              <ul class="flex gap-3 lg:gap-5 mt-3 lg:mt-1 lg:text-3xl font-bold text-black items-center content-center">
+                <li><a href="">Days</a></li>
+                <li><a href="">Hours</a></li>
+                <li><a href="">Minutes</a></li>
+                <li><a href="">Seconds</a></li>
+                
+              </ul>
+              <ul class="flex gap-x-14 lg:gap-x-24 mt-3 font-medium text-[16px] text-[#4f4e4e]">              
+                <li><a href="">15</a></li>
+                <li><a href="">25</a></li>
+                <li><a href="">08</a></li>
+                <li><a href="">29</a></li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="deals-bottom"></div>   <!--deals-bottom-->
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer></footer>
+       <!-- <h2 ></h2> -->
+   <!-- <h2 class="lg:text-5xl font-bold text-black"></h2> -->
+   <!-- <h2 class="lg:text-5xl font-bold text-black"></h2> -->
+   <!-- <h2 class="lg:text-5xl font-bold text-black"></h2> -->
+ <!-- <span> -->
+ <!-- <span class="font-medium text-[16px] text-[#4f4e4e]"> -->
+
+  
+
+              <!-- <p >Days</p></span> :         -->
+              <!-- <p >Days</p></span> :         -->
+            <!-- <span></span> : 
+            <span><p class="font-medium text-[16px] text-[#4f4e4e]">Minutes</p></span> :
+            <span><p class="font-medium text-[16px] text-[#4f4e4e]">seconds</p></span>
+          
+</body>
+</html>
